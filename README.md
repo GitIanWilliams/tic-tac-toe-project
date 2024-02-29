@@ -1,16 +1,4 @@
-# TicTacToeMono
-
-## Todo List
-  * Fix Styles on Home Page
-  * Fix styles on game page
-  * Add Timer
-  * Add basic unit tests to FE components
-  * Write out Future Enhancements
-  * Test Build
-  * Add some logging to BE
-  * Error Handling:
-    * room doesn't exist
-    * socket disconnected
+# Tic Tac Go!
 
 ## Project Description
 
@@ -42,8 +30,10 @@ To run Playwright:
   * Add more E2E tests to validate edge case behavior around reloading, finishing games, navigation, etc...
   * Add BE & FE unit tests (current functionality is being tested by e2e)
   * Refine CICD process
+  * Add more logging to BE
   * Use a monorepo framework to share types (currently they are duplicated) and allow e2e test to be fully integrated
   * the timer functionality is slightly buggy
+  * Add better connectivity error handling
 
 ## Project Notes
 
