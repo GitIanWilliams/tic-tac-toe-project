@@ -19,8 +19,7 @@ This is a Tic-Tac-Toe multiplayer game built with the following stack:
   * Next FE in the `client` directory.
   * Nest BE in the `server` directory for Websocket Gateways.
   * Socket.io for managing the Websockets
-  * Playwright in `client-e2e` for testing the basic multiplayer capability.
-  * Nx Monorepo.
+  * Playwright in `client` for testing the basic multiplayer capability.
   * Currently, no DB or cache server is being used.
 
 ## Run Instructions
@@ -30,9 +29,6 @@ To run the full project:
   2. Open two terminal windows
     1. In one window, cd into `client`, install packages, and run `npm run dev`
     2. In the second window, cd into `server`, install packages, and run `npm run start:dev`
-
-To run FE tests:
-  1. use `npx nx test client`
 
 To run Playwright:
   1. Run the `server` using the above steps
@@ -44,9 +40,10 @@ To run Playwright:
   * Add Login functionality and track previous games in a DB. This could lead to creating leaderboards & pairing users based on ability.
   * Add Invite functionality to allow users to choose their opponents.
   * Add more E2E tests to validate edge case behavior around reloading, finishing games, navigation, etc...
-  * Add BE tests (current functionality is being tested by e2e)
+  * Add BE & FE unit tests (current functionality is being tested by e2e)
   * Refine CICD process
   * Use a monorepo framework to share types (currently they are duplicated) and allow e2e test to be fully integrated
+  * the timer functionality is slightly buggy
 
 ## Project Notes
 
